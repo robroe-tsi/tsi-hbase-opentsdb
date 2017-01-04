@@ -20,7 +20,8 @@
 <configuration>
   <property>
     <name>hive.exec.local.scratchdir</name>
-    <value>/data/tmp/${system:user.name}</value>
+    <!-- <value>/data/tmp/${system:user.name}</value> -->
+	<value>/data/tmp/${user.name}</value>
     <description>Local scratch space for Hive jobs</description>
   </property>
 
