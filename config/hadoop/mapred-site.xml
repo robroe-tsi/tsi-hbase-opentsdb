@@ -68,4 +68,9 @@
         <name>mapreduce.jobhistory.webapp.address</name>
         <value>{{ hostvars[ansible_local.bb.hex.name + '-n1']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}:19888</value>
     </property>
+	<!-- Fix test -->
+	<property>
+        <name>mapreduce.application.classpath</name>
+        <value>/usr/lib/hadoop-mapreduce/*,/usr/lib/hadoop-mapreduce/lib/*</value>
+	</property>
 </configuration>
