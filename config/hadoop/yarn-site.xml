@@ -161,4 +161,10 @@
         <name>yarn.timeline-service.store-class</name>
         <value>org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore</value>
     </property>
+
+    <!-- Fix from https://issues.apache.org/jira/browse/MAPREDUCE-6704 -->
+    <property>
+        <name>yarn.nodemanager.env-whitelist</name>
+        <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+    </property>
 </configuration>
