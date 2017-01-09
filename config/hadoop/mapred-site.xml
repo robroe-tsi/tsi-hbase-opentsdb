@@ -69,12 +69,12 @@
         <value>{{ hostvars[ansible_local.bb.hex.name + '-n1']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}:19888</value>
     </property>
 	<!-- Fix: http://stackoverflow.com/a/36920469 -->
-    <!-- <property>
+    <property>
         <name>mapreduce.application.classpath</name>
         <value>/usr/lib/hadoop-mapreduce/*,/usr/lib/hadoop-mapreduce/lib/*</value>
-    </property> -->
-	<property>
+    </property>
+	<!-- <property>
         <name>mapreduce.application.classpath</name>
         <value>$HADOOP_MAPRED_HOME/*,$HADOOP_MAPRED_HOME/lib/*</value>
-	</property>
+    </property> -->
 </configuration>
